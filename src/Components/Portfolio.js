@@ -1,25 +1,47 @@
 import React, { Component } from "react";
+import sima from "../assets/sima.png";
+import ibuk from "../assets/isbuk.png";
+import resume from "../assets/resume.png";
+import bejamas from "../assets/bejamas.png";
 const datas = [
   {
-    category: "My Travel Blog for my post-university travels",
-    image: "canadian-wanderlust.jpg",
-    title: "Canadian Wanderlust",
-    url: "https://www.canadianwanderlust.com",
+    category: "simastore.ru",
+    image: sima,
+    title: "Simastore",
+    url: "https://simastore.ru/",
+  },
+  {
+    category: "isbuk.ru",
+    image: ibuk,
+    title: "Isbuk",
+    url: "http://isbuk.ru/",
+  },
+  {
+    category: "resume",
+    image: resume,
+    title: "Resuma",
+    url: "https://react-resume-baiyastan95.vercel.app/",
+  },
+  {
+    category: "Bejamas",
+    image: bejamas,
+    title: "Bejamas",
+    url: "https://bejamas-psi.vercel.app/",
   },
 ];
 
 class Portfolio extends Component {
   render() {
-    console.log(this.props.data);
+    console.log(datas);
 
     if (this.props.data) {
-      var projects = this.props.data.projects.map(function (projects) {
+      var projects = datas.map(function (projects) {
         var projectImage = "images/portfolio/" + projects.image;
         return (
           <div key={projects.title} className="columns portfolio-item">
             <div className="item-wrap">
               <a href={projects.url} title={projects.title}>
-                <img alt={projects.title} src={projectImage} />
+                <img alt={projects.title} src={projects.image} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
                     <h5>{projects.title}</h5>
