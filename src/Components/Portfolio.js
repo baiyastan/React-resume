@@ -36,7 +36,6 @@ class Portfolio extends Component {
 
     if (this.props.data) {
       var projects = datas.map(function (projects) {
-        var projectImage = "images/portfolio/" + projects.image;
         return (
           <div key={projects.title} className="columns portfolio-item">
             <div className="item-wrap">
