@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 
 const works = [
-  { name: "ReactJs", level: "80%" },
-  { name: "NEXTJS", level: "60%" },
-  { name: "Typescript", level: "70%" },
-  { name: "REDUX", level: "70%" },
-  { name: "MOBX", level: "60%" },
-  { name: "CSS", level: "90%" },
-  { name: "SASS", level: "80%" },
-  { name: "TAILWINDCSS", level: "80%" },
-  { name: "STYLED-COMPONENTS", level: "50%" },
-  { name: "Bootstrap", level: "70%" },
-  { name: "Git", level: "50%" },
+  { name: "ecmascript", level: "100%" },
+  { name: "ReactJs", level: "100%" },
+  { name: "NEXTJS", level: "100%" },
+  { name: "Typescript", level: "100%" },
+  { name: "REDUX", level: "100%" },
+  { name: "MOBX", level: "100%" },
+  { name: "CSS", level: "100%" },
+  { name: "SASS", level: "100%" },
+  { name: "TAILWINDCSS", level: "100%" },
+  { name: "STYLED-COMPONENTS", level: "100%" },
+  { name: "Bootstrap", level: "100%" },
+  { name: "Git", level: "100%" },
 ];
 
 class Resume extends Component {
