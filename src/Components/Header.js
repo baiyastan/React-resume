@@ -2,22 +2,8 @@ import React, { Component } from "react";
 
 class Header extends Component {
   render() {
-    if (this.props.data) {
-      var name = this.props.data.name;
-      var occupation = "Frontend Developer";
-      var description = this.props.data.description;
-      var city = "Bishkek";
-      // var networks = this.props.data.social.map(function (network) {
-      //   console.log(network);
-      //   return (
-      //     <li key={network.name}>
-      //       <a href={network.url}>
-      //         <i className={network.className}></i>
-      //       </a>
-      //     </li>
-      //   );
-      // });
-    }
+    var occupation = "Frontend Developer";
+    var city = "Bishkek";
 
     return (
       <header id="home">
@@ -65,7 +51,6 @@ class Header extends Component {
               I'm a {city} based <span>{occupation}</span>
             </h3>
             <hr />
-            {/* <ul className="social">{networks}</ul> */}
             <ul className="social">
               <li>
                 <a href="https://www.facebook.com/profile.php?id=100045669557147">

@@ -32,9 +32,7 @@ const datas = [
 
 class Portfolio extends Component {
   render() {
-    console.log(datas);
-
-    if (this.props.data) {
+    if (datas) {
       var projects = datas.map(function (projects) {
         return (
           <div key={projects.title} className="columns portfolio-item">

@@ -3,18 +3,7 @@ import pp from "../assets/pp.jpeg";
 
 class About extends Component {
   render() {
-    if (this.props.data) {
-      var name = "Baiastan Amataliev";
-      var profilepic = pp;
-      var bio = this.props.data.bio;
-      var street = this.props.data.address.street;
-      var city = this.props.data.address.city;
-      var state = this.props.data.address.state;
-      var zip = this.props.data.address.zip;
-      var phone = this.props.data.phone;
-      var email = this.props.data.email;
-      var resumeDownload = this.props.data.resumedownload;
-    }
+    var profilepic = pp;
 
     return (
       <section id="about">
