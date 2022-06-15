@@ -19,7 +19,7 @@ const datas = [
   {
     category: "resume",
     image: resume,
-    title: "Resuma",
+    title: "Resume",
     url: "https://react-resume-baiyastan95.vercel.app/",
   },
   {
